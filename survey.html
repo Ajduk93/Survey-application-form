@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='stylesheet' href='survey.css'>
+<title>Ivan's Application Form</title>
+<h1 id='title'>Ivan's Application Form</h1>
+<p id='description'> Welcome to our application form , please fill the survey to continue. </p>
+</head>
+<body>
+<form id='survey-form' meta='post'>
+<fieldset class="introduction-input">
+    <label id='name-label'for='name'>Name <input type='text' id='name' placeholder='Enter your name' required></label>
+    <label id='email-label'for='email'>Email <input type='email' id='email' placeholder='Enter your Email' required></label>
+    <label id='number-label'for='age'>Age <input type='number' id='number' min='13' max='100' placeholder='Age' required></label>
+    <hr>
+    <label class="upload" for="cv-file">Upload your CV here<input class="cv-file" type="file"></label>
+    <label>
+</fieldset>
+    <fieldset>
+    <select id='dropdown'>
+<option disabled selected value>Select application role</option>
+<option >Front-end Developer</option>
+<option >Back-end Developer</option>
+<option>Full-stack Developer</option>
+<option>QA Engineer</option>
+<option>SEO Engineer</option>
+</select>
+</label>
+</fieldset>
+<fieldset class="skill-fieldset">
+<label>Based on your skill level, choose one appropriate to you:</label>
+<div class="skills"><label class="inline" for='entry'><input id='entry' type='radio' name='skill-level' value='1' checked>Entry</label></div>
+<div><label class="inline" for='intermediate'><input id='intermediate' type='radio' name='skill-level' value='2'>Intermediate</label></div>
+<div><label class="inline" for='senior'><input id='senior' type='radio' name='skill-level' value='3'>Senior</label></div>
+</fieldset>
+<div class="checkbox-set">
+<label>Select programming languages and frameworks that you are skilled with.(Feel free to select multiple if applicable)</label>
+<div><label for='javascript'><input type='checkbox' value='1' name='javascript' id="javascript">JavaScript</label></div>
+<div><label for="python"><input type='checkbox' value='2' name='python' id="python">Python</label></div>
+<div><label for="c#"><input type='checkbox' value='3' name='c#' id="c#">C#</label></div>
+<div><label for="c++"><input type='checkbox' value='4' name='c++' id="c++">C++</label></div>
+<div><label for="sql"><input type='checkbox' value='5' name='sql' id="sql">SQL</label></div>
+<div><label for="java"><input type='checkbox' value='6' name='java' id="java">Java</label></div>
+<div><label for="jquery"><input type='checkbox' value='7' name='jquery' id="jquery">JQuery</label></div>
+<div><label for="bootstrap"><input type='checkbox' value='8' name='bootstrap' id="bootstrap">Bootstrap</label></div>
+<div><label for="asp"><input type='checkbox' value='9' name='asp' id="asp">ASP.net</label></div>
+<div><label for="vue"><input type='checkbox' value='10' name='vue' id="vue">VUE</label></div>
+<div><label for="angular"><input type='checkbox' value='11' name='angular' id="angular">Angular</label></div>
+<div><label for="other"><input type='checkbox' value='12' name='other' id="other">Other</label></div>
+<textarea id='additional-skills' placeholder=' Additional information...'></textarea>
+</div>
+<input id='submit' type="submit"></input>
+</form>
+</body>
+<footer></footer>
+
+</html>

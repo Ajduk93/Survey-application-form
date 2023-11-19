@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans',sans-serif; */
+html{
+    background: url(/programming.jpg);
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+body{
+    color: antiquewhite;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+
+}
+/* Head */
+
+#title, #description{
+    text-align: center;
+    margin: 1em auto;
+}
+
+#description{
+    max-width: 75%;
+}
+form {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 30px 80px 30px 50px;
+    background-color: rgba(39, 39, 55, 0.744);
+    border-radius: 50px;
+}
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+}
+
+.introduction-input input,
+textarea,
+select {
+    margin: 10px 0 10px 0;
+    min-width: 100%;
+    min-height: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type="file"] {
+    padding: 3px 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:#6da5c0 ;
+    min-width: 250px;
+    border: 2px solid #05161a;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    background-color: #0dcb9b;
+    border-color: #0dcb9b69;
+    transition: 1s;
+}
+input[type="checkbox"]{
+    height: 17px;
+    width: 17px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    padding-left: 15px;
+}
+#name-label,#email-label,#number-label{
+    padding-left: 13px;
+}
+input[type="radio"]{
+    width: 37px;
+    height: 14px;
+}
+input[type="radio"]:hover{
+    cursor: pointer;
+}
+select,option {
+    padding-left: 8px;
+    height: 37px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+select,option:hover{
+cursor: pointer;
+}
+
+hr{
+    color:black;
+    border: #3b3b4f solid 2px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+#dropdown{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#additional-skills{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.skill-fieldset input{
+margin: 20px 0 10px 0;
+}
+.checkbox-set{
+    padding-top: 20px;
+    width: 100%;
+}
+.checkbox-set input{
+    margin: 20px 0 10px 0;
+    width: 40px;
+}
+.checkbox-set input:hover{
+    cursor: pointer;
+}
+.introduction-input input{
+
+    border: 1px black 1px;
+    border-radius: 20px;
+}
+textarea{
+    padding-top: 7px;
+    padding-left: 10px;
+    border-radius: 13px;
+    height: 100px;
+    font-size: 16px;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 425px){
+    form{
+        padding: 10px 10px 10px 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+        .introduction-input input {
+        margin: 10px 0px 10px 10px;
+        min-width: 85%;
+        }
+    textarea{
+    min-width: 95%;
+    }
+    h1{
+        max-width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #description{
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+    }
+    .upload{
+        margin-left: 13px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 320px){
+
+    form {
+            min-width: 75%;
+            margin-right: auto;
+            margin-left: auto;
+}
+#description{
+max-width: 17em;
+}
+}
